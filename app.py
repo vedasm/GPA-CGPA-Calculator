@@ -13,6 +13,26 @@ from calculator import (
 
 st.set_page_config(page_title="GPA & CGPA Calculator", page_icon="🎓", layout="centered", initial_sidebar_state="collapsed")
 
+st.markdown(
+    """
+    <style>
+    div.stButton > button[kind="primary"],
+    div.stDownloadButton > button[kind="primary"] {
+        background-color: #2563eb !important;
+        border-color: #2563eb !important;
+        color: #ffffff !important;
+    }
+    div.stButton > button[kind="primary"]:hover,
+    div.stDownloadButton > button[kind="primary"]:hover {
+        background-color: #1d4ed8 !important;
+        border-color: #1d4ed8 !important;
+        color: #ffffff !important;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True,
+)
+
 if "gpa_rows" not in st.session_state:
     st.session_state.gpa_rows = 1
 if "cgpa_rows" not in st.session_state:
