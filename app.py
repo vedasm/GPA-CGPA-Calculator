@@ -11,7 +11,7 @@ from calculator import (
     cgpa_to_percentage,
 )
 
-st.set_page_config(page_title="GPA & CGPA Calculator", page_icon="🎓", layout="wide")
+st.set_page_config(page_title="GPA & CGPA Calculator", page_icon="🎓", layout="centered", initial_sidebar_state="collapsed")
 
 if "gpa_rows" not in st.session_state:
     st.session_state.gpa_rows = 1
